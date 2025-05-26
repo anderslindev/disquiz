@@ -12,7 +12,7 @@ function exec(cmd) {
   return execSync(cmd, { stdio: "inherit", cwd: REPO_DIR });
 }
 
-for (let i = 1; i <= 48; i++) {
+for (let i = 49; i <= 55; i++) {
   const branchName = `feature/pr-${i}`;
   const fileName = `pr-${i}.txt`;
   const prTitle = `Automated PR #${i}`;
