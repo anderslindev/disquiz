@@ -27,7 +27,7 @@ for (let i = 1; i <= 48; i++) {
 
     exec(`git add ${fileName}`);
     exec(`git commit -m "${prTitle}" -m "${CO_AUTHOR}"`);
-    exec(`git push origin ${branchName}`);
+    exec(`git push -f origin ${branchName}`);
 
     // Create PR using GitHub CLI
     exec(
